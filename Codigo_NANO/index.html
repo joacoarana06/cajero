@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .center
+            {
+                text-align: center;
+                
+            }
+            .bottom-right {
+                position: fixed;
+                bottom: 10px;
+                left: 10px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+        </style>
+        <script>
+            function contrasena(x) {
+                if (x=='admin') {
+                    document.getElementById("admin").style.display = 'inline';
+                    document.getElementById("empleado").style.display = 'none';
+                }
+                else if(x=='empleado'){
+                    document.getElementById("admin").style.display = 'none';
+                    document.getElementById("empleado").style.display = 'inline';
+                }
+            }
+        </script>
+    </head>
+    <body>
+    <section class = "form-register">
+    <h1>USUARIO</h1>
+    <section class = "center">
+        <button type="button" class = "botons" onclick="contrasena('admin')" style="width: 200px; margin-right: 50px;"><img src="admin.jpg" width="100" height="100" alt="imagen de persona administradora"></button>
+        <button type="button" class = "botons" onclick="contrasena('empleado')" style="width: 200px; margin-left: 50px;"><img src="normi.jpg" width="100" height="100" alt="imagen normi"></button><br>
+        <label style="width: 200px; margin-right: 270px;">ADMIN</label>
+        <label>USUARIO</label>
+    </section>
+    <div id="admin" style="display: none;">
+    <form method="get" action="comprobar.php" onchange="contrasena('var');">
+        <input type="hidden" class = "controls" value="LUCIUS MAXIMUS" name="usuario1">
+        <input type="password" class = "controls" placeholder="contraseña" name="contrasena">
+        <input type="submit" class = "controls" value="confirmar" name="admin">
+    </form>
+    </div>
+    <div id="empleado" style="display: none;">
+    <form method="get" action="comprobar.php" onchange="contrasena('var');">
+        <input type="hidden" class = "controls" value="NEGRUS ORTIVUS" name="usuario2">
+        <input type="password" class = "controls" placeholder="contraseña" name="contrasena">
+        <input type="submit" class = "controls" value="confirmar" name="empleado">
+    </form>
+    </div>
+    </section>
+    <label class="bottom-right">Minimercado NANO</label>
+    </body>
+</html>

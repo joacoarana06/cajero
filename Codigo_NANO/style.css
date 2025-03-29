@@ -1,0 +1,78 @@
+.link {
+  width: 100%;
+  background: #548bc2;
+  padding: 5px;
+  border-radius: 2px;
+  margin-bottom: 8px;
+  border: 1px solid #548bc2b7;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
+body {
+  background-image: url('fondo.jpg');
+}
+
+.styled-table {border-collapse: collapse; margin: 25px 0; font-size: 1em; font-family: sans-serif; min-width: 450px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); }
+
+.styled-table thead tr { background-color: #980081; color: #ffffff; text-align: middle; }
+
+.styled-table th, .styled-table td { padding: 12px 15px; }
+
+.form-register {
+  width: 600px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 3px 3px 1px rgb(255, 255, 255), 5px 5px 2px rgb(27, 209, 194), 8px 8px 3px blue;
+}
+
+.controls {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-register a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.form-register .botons {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
